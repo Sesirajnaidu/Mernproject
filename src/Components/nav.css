@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    padding: 11px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    object-fit: contain;
+    width: 130px;
+}
+
+.header__links {
+    display: flex;
+
+    gap: 15px;
+}
+
+.header_linktag {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    padding-inline: 15px;
+    border-radius: 12px;
+}
+
+.header_linktag:hover {
+    background-color: rgba(244, 244, 244, 0.2);
+    color: #171a20;
+
+
+
+}
+
+.header__user {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .header__links {
+        display: none;
+    }
+
+}
